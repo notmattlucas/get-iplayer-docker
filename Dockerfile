@@ -1,4 +1,6 @@
-FROM ubuntu:17.04
+FROM ubuntu:17.10
+
+ENV DEBIAN_FRONTEND=noninteractive
 
 RUN apt-get update && \
     apt-get -y install perl ffmpeg atomicparsley git make libxml-libxml-perl php && \
